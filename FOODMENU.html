@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head><title>MENU</title><meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<style>
+    body{
+        border:7px solid red;
+    }
+</style>
+
+<script>
+function calc()
+{
+var a=document.getElementById("txt1").value;
+var b=document.getElementById("txt2").value;
+var c=document.getElementById("txt3").value; 
+var d=document.getElementById("txt4").value;
+var e=document.getElementById("txt5").value;
+var f=document.getElementById("txt6").value;
+var g=document.getElementById("txt7").value;
+var k=document.getElementById("txt8").value;
+if(d<121)
+{
+    e=10.8;
+    f=10.8;
+}
+else if(d>149)
+{
+    e=13.5;
+    f=13.5;
+}
+
+v=document.getElementById("txt5");
+v.value=e;
+g=document.getElementById("txt6");
+g.value=f;
+
+var w=parseInt(k);
+var x=parseInt(d);
+var y=parseFloat(e);
+var z=parseFloat(f);
+
+var h=w*x+y+z;
+var i=document.getElementById("txt7");
+i.value=h;
+}
+</script>    
+</head>
+
+<body>
+<table width=100% style="background-color: black;">
+<TR><TH COLSPAN="4" ALIGN="CENER" style="color:blueviolet">ARYAN'S RESTARAUNT</TD></TR>    
+<tr><th colspan="4" align="center" style="color:blueviolet">FOOD MENU</th></tr>    
+<tr><td width="25%" align="center" style="color:red">FOOD</td>
+<td width="25%" align="center" style="color:red">FOOD CODE</td>
+<td width="25%" align="center" style="color:red">RATE</td>
+<td width="25%" align="center" style="color:red">QUANTITY</td></tr>
+
+<tr><td width="25%" align="center" style="color:whitesmoke">1.CHCHOLE BATURE</td>
+<td width="25%" align="center" style="color:whitesmoke">001</td>
+<td width="25%" align="center" style="color:whitesmoke">Rs.150<br>Rs.120</td>
+<td width="25%" align="center" style="color:whitesmoke">FULL PLATE<BR>HALF PLATE</td></tr>
+
+    <tr><td width="25%" align="center" style="color:whitesmoke">2.IDLI SAMBHAR</td>
+        <td width="25%" align="center" style="color:whitesmoke">002</td>
+        <td width="25%" align="center" style="color:whitesmoke">Rs.150<br>Rs.120</td>
+        <td width="25%" align="center" style="color:whitesmoke">FULL PLATE<BR>HALF PLATE</td></tr>
+            
+            <tr><td width="25%" align="center" style="color:whitesmoke">3.DOSA SAMBHAR WITH SPECIALIZATION WITH CHANTI</td>
+                <td width="25%" align="center" style="color:whitesmoke">003</td>
+                <td width="25%" align="center" style="color:whitesmoke">Rs.150<br>Rs.120</td>
+                <td width="25%" align="center" style="color:whitesmoke">FULL PLATE<BR>HALF PLATE</td></tr>
+                    
+                    <tr><td width="25%" align="center" style="color:whitesmoke">4.CHILLI PANNER NAAN</td>
+                        <td width="25%" align="center" style="color:whitesmoke">004</td>
+                        <td width="25%" align="center" style="color:whitesmoke">Rs.150<br>Rs.120</td>
+                        <td width="25%" align="center" style="color:whitesmoke">FULL PLATE<BR>HALF PLATE</td></tr>                    
+
+</table>   
+
+<hr>
+
+<TABLE WIDTH="100%" style="color:red;background-color: black;">
+<tr><th colspan="4" align="center" style="color:blueviolet"><marquee direction="left">AAJ AAP KYA KHAYENGE??</marquee></th></tr>    
+<tr><td colspan="2" align="center">ENTER FOOD CODE:</td>
+<TD COLSPAN="2" ALIGN="CENTER"><input type="text" placeholder="ENTER FOOD CODE" COLS="64" id="txt1"></TD></tr>
+
+<tr><td colspan="2" align="center">FOOD:</td>
+<TD COLSPAN="2" ALIGN="CENTER"><input type="text"  COLS="64" id="txt2"></TD>
+</tr>
+
+<tr><td colspan="2" align="center">ENTER QUANTITY:</td>
+<TD COLSPAN="2" ALIGN="CENTER"><input type="text" placeholder="ENTER YOUR QUANTITY" COLS="64" id="txt3"></TD>
+</tr>
+
+<tr><td colspan="2" align="center">ENTER RATE:</td>
+<TD COLSPAN="2" ALIGN="CENTER"><input type="text" placeholder="ENTER RATE" COLS="64" id="txt4"></TD></tr>
+
+<tr><td colspan="2" align="center">ENTER NUMBER OF PLATES:</td>
+    <TD COLSPAN="2" ALIGN="CENTER"><input type="text" placeholder="ENTER NO. OF PLATES" COLS="64" id="txt8"></TD></tr>
+
+<tr><td colspan="2" align="center">CGST(9.0%):</td>
+<TD COLSPAN="2" ALIGN="CENTER"><input type="text" placeholder="CGST" COLS="64" id="txt5"></TD>
+</tr>
+
+<tr><td colspan="2" align="center">SGST(9.0%):</td>
+    <TD COLSPAN="2" ALIGN="CENTER"><input type="text" placeholder="SGST" COLS="64" id="txt6"></TD>
+    </tr>
+
+    <tr><td colspan="2" align="center">TOTAL AMOUNT:</td>
+        <TD COLSPAN="2" ALIGN="CENTER"><input type="text" placeholder="YOUR BILL" COLS="64" id="txt7"></TD>
+        </tr>    
+
+<TR><TD COLSPAN="4" align="center"><input type="button" value="SUBMIT" onclick="calc()" style="color:blueviolet"></TD></TR>        
+
+
+
+</TABLE>
+</body>
+
+</html>
